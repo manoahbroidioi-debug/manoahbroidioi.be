@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio - Étudiant e-business</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Mon<strong>Portfolio</strong></div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bonjour, je suis [Ton Prénom]</h1>
+            <p>Étudiant en e-business passionné par le développement web et la gestion de données.</p>
+            <a href="#contact" class="btn">Me contacter</a>
+        </div>
+    </section>
+
+    <section id="competences" class="container">
+        <h2>Mes Compétences</h2>
+        <div class="cards-wrapper">
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Création de sites vitrines, mise en page Flexbox, Responsive Design.</p>
+            </div>
+            <div class="card">
+                <h3>Base de Données</h3>
+                <p>Microsoft Access, SQL, Modélisation relationnelle (Merise).</p>
+            </div>
+            <div class="card">
+                <h3>Gestion de Projet</h3>
+                <p>Analyse des besoins, création de cahier des charges, reporting.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="bg-light">
+        <div class="container">
+            <h2>Mes Réalisations</h2>
+            <div class="project-item">
+                <div class="project-text">
+                    <h3>Gestion de Tournoi de Basket (Access)</h3>
+                    <p>Développement d'une application complète pour gérer un championnat : structure relationnelle, formulaires de saisie et états d'impression.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contactez-moi</h2>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/TON_ID_FORMSPREE" method="POST">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom complet">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="votre@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Comment puis-je vous aider ?"></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - [Ton Nom]. Créé avec passion.</p>
+    </footer>
+
+</body>
+</html>
